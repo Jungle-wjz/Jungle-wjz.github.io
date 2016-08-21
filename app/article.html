@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>My AngularJS App</title> 
+   <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../app/lib/iconfont/iconfont.css" rel="stylesheet">
+   <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-home" role="navigation">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#navbar-collapse">
+         <span class="sr-only">切换导航</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Jungle<sup>W</sup></a>
+   </div>
+   <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+         <li><a href="../index.html">首页</a></li>
+         <li class="active"><a href="#">文章</a></li>
+         <li><a href="#">随笔</a></li>
+         <li><a href="#">关于</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="#">登录</a></li>
+         <li><a href="#">注册</a></li>
+      </ul>
+   </div>
+</nav>
+<header class="header header-article" id="header">
+    <div class="header-topic">
+        <h1 class="topic">文章<sup>J.W</sup></h1>
+        <p class="sub-topic">
+            Life is not smooth.<br>What we can do is to enjoy it.
+        </p>
+    </div>
+</header>
+<div class="container articles">
+    <aside class="aside">    
+        <div class="title-search">
+            <input class="form-control" type="text" placeholder="搜索标题" />
+        </div>
+        <div class="list-group title-list">
+            <a class="list-group-item title-item" href="#article">关于博客</a>
+            <a class="list-group-item title-item" href="#article">关于博客</a>
+            <a class="list-group-item title-item" href="#article">关于博客</a>
+            <a class="list-group-item title-item selected" href="#article">关于博客</a>
+            <a class="list-group-item title-item" href="#article">关于博客</a>
+            <a class="list-group-item title-item" href="#article">关于博客</a>
+            <a class="list-group-item title-item" href="#article">关于博客</a>
+            <a class="list-group-item title-item" href="#article">关于博客</a>
+            <a class="list-group-item title-item" href="#article">关于博客</a>
+        </div>
+    </aside>
+    <div class="fixed-nav fixed-nav-left">
+        <a class="fixed-btn btn menu-btn" href="javascript: void(0)"><i class="iconfont icon-liebiao"></i></a>
+    </div>
+    <article class="article" id="article">
+        <h3>Hi, everybody!<small>&nbsp;&nbsp;&nbsp;&nbsp;更新于:&nbsp;&nbsp;08-01-2016</small></h3>
+        <h6>主题:&nbsp;&nbsp;杂七杂八</h6>
+        <h6>摘要:&nbsp;&nbsp;简单介绍下个人主页</h6>
+        <div class="blog-content">
+            <p><strong>C4Nstudio.com</strong>是笔者C4N独立开发的个人主页及博客，使用包括
+                <a href="https://facebook.github.io/react/">React</a>、
+                <a href="https://nodejs.org/en/">Node.js</a>、<a href="http://foundation.zurb.com/">Foundation</a>和
+                <a href="https://webpack.github.io/">Webpack</a>
+                等前后端框架、类库和工具，希望不仅能在搭建网站的过程中学以致用，掌握最新前后端知识，还能在推送的博文中向读者介绍个人了解到的技术信息，共同分享，不断进步。博客包括以下几个主要板块：
+            </p>
+            <p>Hope you enjoy.</p>
+        </div>
+    </article>
+</div>
+<footer class="footer">
+    <p>Copyright&nbsp;&copy;&nbsp;2011-2016&nbsp;<a href="../index.html">Jungle.W</a></p>
+    <p>All Rights Reserved</p>
+</footer>
+<div class="fixed-nav fixed-nav-right">
+    <a class="fixed-btn btn to-top-btn" href="#header"><i class="iconfont icon-buyotherup"></i></a>
+</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="lib/angular/angular.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
