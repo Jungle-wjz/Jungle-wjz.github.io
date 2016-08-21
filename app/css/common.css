@@ -10,6 +10,7 @@ body{
     line-height: 1;
     border-radius: 0;
     border: 1px solid #d4d9de;
+    background-color: #d4d9de;
 }
 .fixed-nav-right {
     position: fixed;

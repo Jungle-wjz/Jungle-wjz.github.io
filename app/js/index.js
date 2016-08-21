@@ -1,7 +1,15 @@
 $(function(){
     window.onscroll = function(){ 
         showToTopBtn();
-    } 
+    }
+    $("#to_top_btn").bind("click", function(){
+        $('html, body').animate({scrollTop: '0px'}, "fast", "linear",
+            function(){
+            
+            }
+        );
+    });
+    
 });
 function showToTopBtn(){
     var t = document.documentElement.scrollTop || document.body.scrollTop;

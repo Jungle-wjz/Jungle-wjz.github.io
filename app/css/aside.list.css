@@ -40,7 +40,7 @@
     .aside-list .aside-menu {    
         position: fixed;
         top: 10%;
-        left: -200px;
+        left: -250px;
         z-index: 100;
         transition: left 1s;
     }
