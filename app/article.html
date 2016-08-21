@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>My AngularJS App</title> 
-   <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../app/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
    <link href="../app/lib/iconfont/iconfont.css" rel="stylesheet">
-   <link href="css/index.css" rel="stylesheet">
+   <link href="css/common.css" rel="stylesheet">
+   <link href="css/navbar.css" rel="stylesheet">
+   <link href="css/header.css" rel="stylesheet">
+   <link href="css/container.articles.css" rel="stylesheet">
+   <link href="css/aside.list.css" rel="stylesheet">
+   <link href="css/footer.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-home" role="navigation">
@@ -42,25 +47,28 @@
     </div>
 </header>
 <div class="container articles">
-    <aside class="aside">    
-        <div class="title-search">
-            <input class="form-control" type="text" placeholder="搜索标题" />
+    <aside class="aside aside-list">
+        <div class="aside-menu">
+            <div class="title-search">
+                <input class="form-control" type="text" placeholder="搜索标题" />
+            </div>
+            <div class="list-group title-list">
+                <a class="list-group-item title-item" href="#article">关于博客</a>
+                <a class="list-group-item title-item" href="#article">关于博客</a>
+                <a class="list-group-item title-item" href="#article">关于博客</a>
+                <a class="list-group-item title-item selected" href="#article">关于博客</a>
+                <a class="list-group-item title-item" href="#article">关于博客</a>
+                <a class="list-group-item title-item" href="#article">关于博客</a>
+                <a class="list-group-item title-item" href="#article">关于博客</a>
+                <a class="list-group-item title-item" href="#article">关于博客</a>
+                <a class="list-group-item title-item" href="#article">关于博客</a>
+            </div>
         </div>
-        <div class="list-group title-list">
-            <a class="list-group-item title-item" href="#article">关于博客</a>
-            <a class="list-group-item title-item" href="#article">关于博客</a>
-            <a class="list-group-item title-item" href="#article">关于博客</a>
-            <a class="list-group-item title-item selected" href="#article">关于博客</a>
-            <a class="list-group-item title-item" href="#article">关于博客</a>
-            <a class="list-group-item title-item" href="#article">关于博客</a>
-            <a class="list-group-item title-item" href="#article">关于博客</a>
-            <a class="list-group-item title-item" href="#article">关于博客</a>
-            <a class="list-group-item title-item" href="#article">关于博客</a>
+        <div class="fixed-nav aside-fixed-nav">
+            <a class="btn menu-btn" href="javascript: void(0)"><i class="iconfont icon-liebiao"></i></a>
         </div>
+        <div class="aside-layer"></div>
     </aside>
-    <div class="fixed-nav fixed-nav-left">
-        <a class="fixed-btn btn menu-btn" href="javascript: void(0)"><i class="iconfont icon-liebiao"></i></a>
-    </div>
     <article class="article" id="article">
         <h3>Hi, everybody!<small>&nbsp;&nbsp;&nbsp;&nbsp;更新于:&nbsp;&nbsp;08-01-2016</small></h3>
         <h6>主题:&nbsp;&nbsp;杂七杂八</h6>
@@ -81,11 +89,12 @@
     <p>All Rights Reserved</p>
 </footer>
 <div class="fixed-nav fixed-nav-right">
-    <a class="fixed-btn btn to-top-btn" href="#header"><i class="iconfont icon-buyotherup"></i></a>
+    <a class="btn to-top-btn" href="#header" id="to_top_btn"><i class="iconfont icon-buyotherup"></i></a>
 </div>
-<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="lib/jquery-3.1.0/jquery-3.1.0.min.js"></script>
+<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 <script src="lib/angular/angular.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/aside.list.js"></script>
 </body>
 </html>
