@@ -23,6 +23,7 @@
 
 .aside-list .title-list .selected{
     color: red;
+    font-size: 18px;
 }
 /* aside隐藏时的菜单按钮 */
 .aside-list .aside-fixed-nav {
@@ -53,9 +54,6 @@
         left: -250px;
         z-index: 100;
         transition: left 1s;
-    }
-    .aside-list .title-list{
-        text-align: center;
     }
     .aside-list .aside-menu-show{
         left: 1%;

@@ -1,13 +1,17 @@
 $(function(){
    $(".aside-layer").bind("click", function(){
-       showOrHideAsideMenu();
+       hideAsideMenu();
    });
     $(".aside-fixed-nav .menu-btn").bind("click", function(){
-       showOrHideAsideMenu();
+       showAsideMenu();
    });
 });
 
-function showOrHideAsideMenu(){
-    $(".aside-layer").toggleClass("aside-layer-show");
-    $(".aside-menu").toggleClass("aside-menu-show");
+function showAsideMenu(){
+    $(".aside-layer").addClass("aside-layer-show");
+    $(".aside-menu").addClass("aside-menu-show");
+}
+function hideAsideMenu(){
+    $(".aside-layer").removeClass("aside-layer-show");
+    $(".aside-menu").removeClass("aside-menu-show");
 }
